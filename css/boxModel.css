@@ -425,7 +425,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  right: 20%;
+  right: 6%;
 
   @media (max-width: 500px) {
     right: 0%;

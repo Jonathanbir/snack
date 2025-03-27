@@ -235,15 +235,15 @@ header nav .menu {
   z-index: 99;
 }
 header nav .menu .logo {
-  width: 100%;
+  width: 100px;
   height: 80px;
   text-align: center;
   position: fixed;
   top: 1%;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 99;
+  z-index: 56;
+  margin: auto;
 }
 header nav .menu .logo img {
   width: 85px;
@@ -328,7 +328,7 @@ header nav .login li {
     left: 0%;
     transition: 0.3s;
     transform: translateX(-100%);
-    z-index: 20;
+    z-index: 100;
   }
   nav .menu #list_appear.show {
     transform: translateX(0%);
@@ -378,7 +378,7 @@ header nav .login li {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    z-index: 56;
 
     @media (max-width: 500px) {
       position: fixed;
