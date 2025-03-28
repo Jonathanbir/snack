@@ -561,8 +561,8 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .index .search img {
-    transform: translate(0px, -11px) scale(1.5);
     display: inline-block;
+    transform: translate(0px, -11px) scale(1.5);
   }
 }
 .index .search select,
@@ -1100,6 +1100,10 @@ body {
 .index p,
 .index span {
   font-family: g2Font;
+}
+
+.index h2 {
+  font-size: 25px;
 }
 
 .index .section_12 .LeaderboardTitle #celebration {

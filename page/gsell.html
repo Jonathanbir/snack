@@ -83,197 +83,182 @@
         </ul>
       </nav>
     </header>
-
     <!-- map serch -->
-    <div id="google_serch">
-      <div id="serch_title">
-        <h2>尋找販賣機</h2>
+    <div id="google_container">
+      <div id="google_serch">
+        <div id="serch_title">
+          <h2>尋找販賣機</h2>
+        </div>
+        <form action="" method="get" name="serch_list" id="serch_form">
+          <div id="serch_bar">
+            <select name="serch_place" class="search_select">
+              <option value="111">中壢市</option>
+              <option value="222">桃園市</option>
+              <option value="333">新北市</option>
+              <option value="444">台北市</option>
+            </select>
+          </div>
+          <div id="serch_input">
+            <input
+              type="text"
+              name="serch_start"
+              placeholder="起點"
+              class="serch_start"
+            />
+            <input
+              type="text"
+              name="serch_end"
+              placeholder="目的地"
+              id="serch_end"
+            />
+          </div>
+          <div class="serch">
+            <a href="#" class="serch_serch">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </form>
       </div>
+      <!-- map api -->
+      <div id="mapSearch">
+        <div class="mapSearch_resullt">
+          <div class="map_serch_box">
+            <div class="map_serch_item">
+              <div class="map_serch_item_pic">
+                <img src="../images/nnnnn/s1.png" alt="sell_machine" />
+              </div>
 
-      <form action="" method="get" name="serch_list" id="serch_form">
-        <div id="serch_bar">
-          <select name="serch_place" class="search_select">
-            <option value="111">中壢市</option>
-            <option value="222">桃園市</option>
-            <option value="333">新北市</option>
-            <option value="444">台北市</option>
-          </select>
-        </div>
-
-        <div id="serch_input">
-          <input
-            type="text"
-            name="serch_start"
-            placeholder="起點"
-            class="serch_start"
-          />
-          <input
-            type="text"
-            name="serch_end"
-            placeholder="目的地"
-            id="serch_end"
-          />
-        </div>
-
-        <div class="serch">
-          <a href="#" class="serch_serch">
-            <i class="fas fa-search"></i>
-          </a>
-        </div>
-      </form>
-    </div>
-
-    <!-- map api -->
-    <div id="mapSearch">
-      <div id="map"></div>
-      <script src="../js/gsell.js"></script>
-      <script
-        async
-        defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxP0uxcl_z9Y2bY7OkrWZg5TRhtkANEog&callback=initMap"
-      ></script>
-      <!-- 地圖篩選 -->
-
-      <div class="mapSearch_resullt">
-        <div class="map_serch_box">
-          <div class="map_serch_item">
-            <div class="map_serch_item_pic">
-              <img src="../images/nnnnn/s1.png" alt="sell_machine" />
+              <div class="map_serch_item_info">
+                <div class="map_serch_item_info_point">
+                  <span>地點:桃園市中壢區中央路</span>
+                </div>
+                <div class="map_serch_item_info_distance">
+                  <span>距離: 100公尺</span>
+                </div>
+                <div class="map_serch_info_line">
+                  <a href="#">
+                    <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
             </div>
+          </div>
+          <!-- 第2個框 -->
+          <div class="map_serch_box">
+            <div class="map_serch_item">
+              <div class="map_serch_item_pic">
+                <img src="../images/nnnnn/s2.png" alt="sell_machine" />
+              </div>
 
-            <div class="map_serch_item_info">
-              <div class="map_serch_item_info_point">
-                <span>地點:桃園市中壢區中央路</span>
+              <div class="map_serch_item_info">
+                <div class="map_serch_item_info_point">
+                  <span>地點:桃園市中壢區中央路</span>
+                </div>
+                <div class="map_serch_item_info_distance">
+                  <span>距離: 100公尺</span>
+                </div>
+                <div class="map_serch_info_line">
+                  <a href="#">
+                    <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
+                  </a>
+                </div>
               </div>
-              <div class="map_serch_item_info_distance">
-                <span>距離: 100公尺</span>
-              </div>
-              <div class="map_serch_info_line">
-                <a href="#">
-                  <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
-                </a>
-              </div>
+              <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
+          </div>
+          <!-- 第3個框 -->
+          <div class="map_serch_box">
+            <div class="map_serch_item">
+              <div class="map_serch_item_pic">
+                <img src="../images/nnnnn/s3.png" alt="sell_machine" />
+              </div>
+
+              <div class="map_serch_item_info">
+                <div class="map_serch_item_info_point">
+                  <span>地點:桃園市中壢區中央路</span>
+                </div>
+                <div class="map_serch_item_info_distance">
+                  <span>距離: 100公尺</span>
+                </div>
+                <div class="map_serch_info_line">
+                  <a href="#">
+                    <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- 第4個框 -->
+          <div class="map_serch_box">
+            <div class="map_serch_item">
+              <div class="map_serch_item_pic">
+                <img src="../images/nnnnn/s1.png" alt="sell_machine" />
+              </div>
+
+              <div class="map_serch_item_info">
+                <div class="map_serch_item_info_point">
+                  <span>地點:桃園市中壢區中央路</span>
+                </div>
+                <div class="map_serch_item_info_distance">
+                  <span>距離: 100公尺</span>
+                </div>
+                <div class="map_serch_info_line">
+                  <a href="#">
+                    <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- 第5個框 -->
+          <div class="map_serch_box">
+            <div class="map_serch_item">
+              <div class="map_serch_item_pic">
+                <img src="../images/nnnnn/s3.png" alt="sell_machine" />
+              </div>
+
+              <div class="map_serch_item_info">
+                <div class="map_serch_item_info_point">
+                  <span>地點:桃園市中壢區中央路</span>
+                </div>
+                <div class="map_serch_item_info_distance">
+                  <span>距離: 100公尺</span>
+                </div>
+                <div class="map_serch_info_line">
+                  <a href="#">
+                    <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
           </div>
         </div>
-
-        <!-- 第2個框 -->
-        <div class="map_serch_box">
-          <div class="map_serch_item">
-            <div class="map_serch_item_pic">
-              <img src="../images/nnnnn/s2.png" alt="sell_machine" />
-            </div>
-
-            <div class="map_serch_item_info">
-              <div class="map_serch_item_info_point">
-                <span>地點:桃園市中壢區中央路</span>
-              </div>
-              <div class="map_serch_item_info_distance">
-                <span>距離: 100公尺</span>
-              </div>
-              <div class="map_serch_info_line">
-                <a href="#">
-                  <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
-                </a>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-
-        <!-- 第3個框 -->
-        <div class="map_serch_box">
-          <div class="map_serch_item">
-            <div class="map_serch_item_pic">
-              <img src="../images/nnnnn/s3.png" alt="sell_machine" />
-            </div>
-
-            <div class="map_serch_item_info">
-              <div class="map_serch_item_info_point">
-                <span>地點:桃園市中壢區中央路</span>
-              </div>
-              <div class="map_serch_item_info_distance">
-                <span>距離: 100公尺</span>
-              </div>
-              <div class="map_serch_info_line">
-                <a href="#">
-                  <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
-                </a>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-        <!-- 第4個框 -->
-        <div class="map_serch_box">
-          <div class="map_serch_item">
-            <div class="map_serch_item_pic">
-              <img src="../images/nnnnn/s1.png" alt="sell_machine" />
-            </div>
-
-            <div class="map_serch_item_info">
-              <div class="map_serch_item_info_point">
-                <span>地點:桃園市中壢區中央路</span>
-              </div>
-              <div class="map_serch_item_info_distance">
-                <span>距離: 100公尺</span>
-              </div>
-              <div class="map_serch_info_line">
-                <a href="#">
-                  <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
-                </a>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
-
-        <!-- 第5個框 -->
-        <div class="map_serch_box">
-          <div class="map_serch_item">
-            <div class="map_serch_item_pic">
-              <img src="../images/nnnnn/s3.png" alt="sell_machine" />
-            </div>
-
-            <div class="map_serch_item_info">
-              <div class="map_serch_item_info_point">
-                <span>地點:桃園市中壢區中央路</span>
-              </div>
-              <div class="map_serch_item_info_distance">
-                <span>距離: 100公尺</span>
-              </div>
-              <div class="map_serch_info_line">
-                <a href="#">
-                  <span>規劃路線 <i class="fas fa-location-arrow"></i></span>
-                </a>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
+        <div class="map"></div>
       </div>
     </div>
-
     <footer>
       <div class="container">
         <div class="snack ipf">
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
       <div class="container">
@@ -281,19 +266,19 @@
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
       <div class="container">
@@ -301,19 +286,19 @@
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
       <div class="container">
@@ -321,19 +306,19 @@
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
       <div class="container">
@@ -341,19 +326,19 @@
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
       <div class="container">
@@ -361,19 +346,19 @@
           <div class="pic">
             <img src="../images/nnnnn/ipf.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipc">
           <div class="pic">
             <img src="../images/nnnnn/ipc.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
         <div class="snack ipcho">
           <div class="pic">
             <img src="../images/nnnnn/ipcho.png" alt="ipPicture" />
           </div>
-          <div class="shadow"></div>
+          <!-- <div class="shadow"></div> -->
         </div>
       </div>
 

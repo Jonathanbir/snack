@@ -88,6 +88,7 @@ body {
 }
 
 .step-content .step-content-foot button.active {
+  font-family: g2Font;
   background-color: #00acc1;
   color: white;
 }
@@ -401,6 +402,10 @@ body {
   display: flex;
   justify-content: center;
   margin: 12px auto;
+
+  @media only screen and (max-width: 500px) {
+    top: 25%;
+  }
 }
 .section_15 #btns15 .btn {
   font-size: 30px;
@@ -1259,7 +1264,7 @@ a:hover {
 }
 
 header nav .searchBtn img {
-  display: block;
+  display: none;
   background: url(../images/tina/search.png);
   width: 135px !important;
   margin-top: 34px !important;
